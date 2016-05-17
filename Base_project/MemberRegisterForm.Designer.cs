@@ -176,9 +176,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(392, 324);
             this.Controls.Add(this.btn_reg);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "MemberRegisterForm";
             this.Text = "MemberRegisterForm";
             this.groupBox1.ResumeLayout(false);
