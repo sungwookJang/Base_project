@@ -94,7 +94,7 @@ namespace Base_project
 
         private void MemberRegisterForm_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("HelloWorld");
         }
     }
 }
