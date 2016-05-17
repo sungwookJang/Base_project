@@ -34,26 +34,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbox_name = new System.Windows.Forms.TextBox();
+            this.tbox_snum = new System.Windows.Forms.TextBox();
+            this.tbox_id = new System.Windows.Forms.TextBox();
+            this.tbox_pw = new System.Windows.Forms.TextBox();
+            this.tbox_email = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbox_domain = new System.Windows.Forms.ComboBox();
             this.btn_reg = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbox_domain);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbox_email);
+            this.groupBox1.Controls.Add(this.tbox_pw);
+            this.groupBox1.Controls.Add(this.tbox_id);
+            this.groupBox1.Controls.Add(this.tbox_snum);
+            this.groupBox1.Controls.Add(this.tbox_name);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -111,40 +111,40 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "이메일 :";
             // 
-            // textBox1
+            // tbox_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(104, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 21);
-            this.textBox1.TabIndex = 5;
+            this.tbox_name.Location = new System.Drawing.Point(104, 46);
+            this.tbox_name.Name = "tbox_name";
+            this.tbox_name.Size = new System.Drawing.Size(234, 21);
+            this.tbox_name.TabIndex = 5;
             // 
-            // textBox2
+            // tbox_snum
             // 
-            this.textBox2.Location = new System.Drawing.Point(104, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 21);
-            this.textBox2.TabIndex = 6;
+            this.tbox_snum.Location = new System.Drawing.Point(104, 83);
+            this.tbox_snum.Name = "tbox_snum";
+            this.tbox_snum.Size = new System.Drawing.Size(234, 21);
+            this.tbox_snum.TabIndex = 6;
             // 
-            // textBox3
+            // tbox_id
             // 
-            this.textBox3.Location = new System.Drawing.Point(104, 120);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 21);
-            this.textBox3.TabIndex = 7;
+            this.tbox_id.Location = new System.Drawing.Point(104, 120);
+            this.tbox_id.Name = "tbox_id";
+            this.tbox_id.Size = new System.Drawing.Size(234, 21);
+            this.tbox_id.TabIndex = 7;
             // 
-            // textBox4
+            // tbox_pw
             // 
-            this.textBox4.Location = new System.Drawing.Point(104, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(234, 21);
-            this.textBox4.TabIndex = 8;
+            this.tbox_pw.Location = new System.Drawing.Point(104, 157);
+            this.tbox_pw.Name = "tbox_pw";
+            this.tbox_pw.Size = new System.Drawing.Size(234, 21);
+            this.tbox_pw.TabIndex = 8;
             // 
-            // textBox5
+            // tbox_email
             // 
-            this.textBox5.Location = new System.Drawing.Point(104, 194);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(91, 21);
-            this.textBox5.TabIndex = 9;
+            this.tbox_email.Location = new System.Drawing.Point(104, 194);
+            this.tbox_email.Name = "tbox_email";
+            this.tbox_email.Size = new System.Drawing.Size(91, 21);
+            this.tbox_email.TabIndex = 9;
             // 
             // label6
             // 
@@ -155,13 +155,13 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "@";
             // 
-            // comboBox1
+            // cbox_domain
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(225, 194);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(113, 20);
-            this.comboBox1.TabIndex = 11;
+            this.cbox_domain.FormattingEnabled = true;
+            this.cbox_domain.Location = new System.Drawing.Point(225, 194);
+            this.cbox_domain.Name = "cbox_domain";
+            this.cbox_domain.Size = new System.Drawing.Size(113, 20);
+            this.cbox_domain.TabIndex = 11;
             // 
             // btn_reg
             // 
@@ -171,6 +171,7 @@
             this.btn_reg.TabIndex = 1;
             this.btn_reg.Text = "가입하기";
             this.btn_reg.UseVisualStyleBackColor = true;
+            this.btn_reg.Click += new System.EventHandler(this.btn_reg_Click);
             // 
             // MemberRegisterForm
             // 
@@ -197,13 +198,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbox_domain;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbox_email;
+        private System.Windows.Forms.TextBox tbox_pw;
+        private System.Windows.Forms.TextBox tbox_id;
+        private System.Windows.Forms.TextBox tbox_snum;
+        private System.Windows.Forms.TextBox tbox_name;
         private System.Windows.Forms.Button btn_reg;
     }
 }

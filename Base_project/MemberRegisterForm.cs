@@ -15,6 +15,76 @@ namespace Base_project
         public MemberRegisterForm()
         {
             InitializeComponent();
+            cbox_domain.Items.Add("naver.com");
+            cbox_domain.Items.Add("hanmail.net");
+            cbox_domain.Items.Add("gmail.com");
+        }
+
+        private void btn_reg_Click(object sender, EventArgs e)
+        {
+            if (tbox_name.Text == String.Empty)
+            {
+                MessageBox.Show("이름을 입력하세요");
+                tbox_name.Focus();
+                return;
+            }
+            if (tbox_snum.Text == String.Empty)
+            {
+                MessageBox.Show("학번을 입력하세요");
+                tbox_snum.Focus();
+                return;
+            }
+            if (tbox_id.Text == String.Empty)
+            {
+                MessageBox.Show("아이디를 입력하세요");
+                tbox_id.Focus();
+                return;
+            }
+            if (tbox_pw.Text == String.Empty)
+            {
+                MessageBox.Show("비밀번호를 입력하세요");
+                tbox_pw.Focus();
+                return;
+            }
+            if (tbox_email.Text == String.Empty)
+            {
+                MessageBox.Show("이메일을 입력하세요");
+                tbox_email.Focus();
+                if (cbox_domain.Text == String.Empty)
+                {
+                    MessageBox.Show("도메인을 선택하세요");
+                    return;
+                }
+                return;
+            }
+            SendEmail();
+        }
+
+        ConfirmationForm cff;
+        private void SendEmail()
+        {
+            string c_num = "";
+            // 인증번호 생성
+            cff = new ConfirmationForm(c_num);
+            cff.ShowDialog();
+            cff.FormClosed += Cff_FormClosed;
+        }
+
+        private void Cff_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            cff = null;
+            RegisterMember();
+        }
+
+        private void RegisterMember()
+        {
+            string name = tbox_name.Text;
+            string snum = tbox_snum.Text;
+            string id = tbox_id.Text;
+            string pw = tbox_pw.Text;
+            string email = tbox_email.Text + "@" + cbox_domain.Text;
+
+            //xml로 회원관리
         }
     }
 }

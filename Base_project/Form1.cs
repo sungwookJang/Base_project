@@ -16,5 +16,18 @@ namespace Base_project
         {
             InitializeComponent();
         }
+
+        MemberRegisterForm mrf;
+        private void btn_reg_Click(object sender, EventArgs e)
+        {
+            mrf = new MemberRegisterForm();
+            mrf.ShowDialog();
+            mrf.FormClosed += Mrf_FormClosed;
+        }
+
+        private void Mrf_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            mrf = null;
+        }
     }
 }

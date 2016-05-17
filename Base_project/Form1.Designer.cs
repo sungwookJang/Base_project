@@ -96,6 +96,7 @@
             this.btn_reg.TabIndex = 6;
             this.btn_reg.Text = "회원가입";
             this.btn_reg.UseVisualStyleBackColor = true;
+            this.btn_reg.Click += new System.EventHandler(this.btn_reg_Click);
             // 
             // Form1
             // 
