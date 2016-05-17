@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorizedEventArgs.cs" />
     <Compile Include="ConfirmationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +97,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConfirmNumLib\ConfirmNumLib.csproj">
+      <Project>{8de8a043-d750-4245-a083-c05b123b7ffa}</Project>
+      <Name>ConfirmNumLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

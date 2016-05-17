@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ConfirmNumLib;
 
 namespace Base_project
 {
@@ -63,20 +64,24 @@ namespace Base_project
         ConfirmationForm cff;
         private void SendEmail()
         {
-            string c_num = "";
-            // 인증번호 생성
+            string c_num = ConfirmNum.AuthNum;
+            // 인증번호 생성          
+
             cff = new ConfirmationForm(c_num);
             cff.ShowDialog();
-            cff.FormClosed += Cff_FormClosed;
+            cff.AuthorizedEvent += Cff_AuthorizedEvent;
         }
 
-        private void Cff_FormClosed(object sender, FormClosedEventArgs e)
+        private void Cff_AuthorizedEvent(object sender, AuthorizedEventArgs e)
         {
-            cff = null;
-            RegisterMember();
+            if(e.Authorized)
+            {
+                cff = null;
+                RegisterMember();
+            }
         }
 
-        private void RegisterMember()
+        public void RegisterMember()
         {
             string name = tbox_name.Text;
             string snum = tbox_snum.Text;
@@ -85,6 +90,11 @@ namespace Base_project
             string email = tbox_email.Text + "@" + cbox_domain.Text;
 
             //xml로 회원관리
+        }
+
+        private void MemberRegisterForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

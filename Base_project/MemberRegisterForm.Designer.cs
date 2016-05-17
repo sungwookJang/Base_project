@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tbox_name = new System.Windows.Forms.TextBox();
-            this.tbox_snum = new System.Windows.Forms.TextBox();
-            this.tbox_id = new System.Windows.Forms.TextBox();
-            this.tbox_pw = new System.Windows.Forms.TextBox();
-            this.tbox_email = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.cbox_domain = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbox_email = new System.Windows.Forms.TextBox();
+            this.tbox_pw = new System.Windows.Forms.TextBox();
+            this.tbox_id = new System.Windows.Forms.TextBox();
+            this.tbox_snum = new System.Windows.Forms.TextBox();
+            this.tbox_name = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_reg = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,85 +66,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "회원가입";
             // 
-            // label1
+            // cbox_domain
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "이름 :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "학번 :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(37, 120);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 12);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "아이디 :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 157);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 12);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "비밀번호 :";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 194);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 12);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "이메일 :";
-            // 
-            // tbox_name
-            // 
-            this.tbox_name.Location = new System.Drawing.Point(104, 46);
-            this.tbox_name.Name = "tbox_name";
-            this.tbox_name.Size = new System.Drawing.Size(234, 21);
-            this.tbox_name.TabIndex = 5;
-            // 
-            // tbox_snum
-            // 
-            this.tbox_snum.Location = new System.Drawing.Point(104, 83);
-            this.tbox_snum.Name = "tbox_snum";
-            this.tbox_snum.Size = new System.Drawing.Size(234, 21);
-            this.tbox_snum.TabIndex = 6;
-            // 
-            // tbox_id
-            // 
-            this.tbox_id.Location = new System.Drawing.Point(104, 120);
-            this.tbox_id.Name = "tbox_id";
-            this.tbox_id.Size = new System.Drawing.Size(234, 21);
-            this.tbox_id.TabIndex = 7;
-            // 
-            // tbox_pw
-            // 
-            this.tbox_pw.Location = new System.Drawing.Point(104, 157);
-            this.tbox_pw.Name = "tbox_pw";
-            this.tbox_pw.Size = new System.Drawing.Size(234, 21);
-            this.tbox_pw.TabIndex = 8;
-            // 
-            // tbox_email
-            // 
-            this.tbox_email.Location = new System.Drawing.Point(104, 194);
-            this.tbox_email.Name = "tbox_email";
-            this.tbox_email.Size = new System.Drawing.Size(91, 21);
-            this.tbox_email.TabIndex = 9;
+            this.cbox_domain.FormattingEnabled = true;
+            this.cbox_domain.Location = new System.Drawing.Point(225, 194);
+            this.cbox_domain.Name = "cbox_domain";
+            this.cbox_domain.Size = new System.Drawing.Size(113, 20);
+            this.cbox_domain.TabIndex = 11;
             // 
             // label6
             // 
@@ -155,13 +83,85 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "@";
             // 
-            // cbox_domain
+            // tbox_email
             // 
-            this.cbox_domain.FormattingEnabled = true;
-            this.cbox_domain.Location = new System.Drawing.Point(225, 194);
-            this.cbox_domain.Name = "cbox_domain";
-            this.cbox_domain.Size = new System.Drawing.Size(113, 20);
-            this.cbox_domain.TabIndex = 11;
+            this.tbox_email.Location = new System.Drawing.Point(104, 194);
+            this.tbox_email.Name = "tbox_email";
+            this.tbox_email.Size = new System.Drawing.Size(91, 21);
+            this.tbox_email.TabIndex = 9;
+            // 
+            // tbox_pw
+            // 
+            this.tbox_pw.Location = new System.Drawing.Point(104, 157);
+            this.tbox_pw.Name = "tbox_pw";
+            this.tbox_pw.Size = new System.Drawing.Size(234, 21);
+            this.tbox_pw.TabIndex = 8;
+            // 
+            // tbox_id
+            // 
+            this.tbox_id.Location = new System.Drawing.Point(104, 120);
+            this.tbox_id.Name = "tbox_id";
+            this.tbox_id.Size = new System.Drawing.Size(234, 21);
+            this.tbox_id.TabIndex = 7;
+            // 
+            // tbox_snum
+            // 
+            this.tbox_snum.Location = new System.Drawing.Point(104, 83);
+            this.tbox_snum.Name = "tbox_snum";
+            this.tbox_snum.Size = new System.Drawing.Size(234, 21);
+            this.tbox_snum.TabIndex = 6;
+            // 
+            // tbox_name
+            // 
+            this.tbox_name.Location = new System.Drawing.Point(104, 46);
+            this.tbox_name.Name = "tbox_name";
+            this.tbox_name.Size = new System.Drawing.Size(234, 21);
+            this.tbox_name.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(37, 194);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 12);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "이메일 :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(25, 157);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 12);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "비밀번호 :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(37, 120);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 12);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "아이디 :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(49, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 12);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "학번 :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(49, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 12);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "이름 :";
             // 
             // btn_reg
             // 
@@ -184,6 +184,7 @@
             this.MaximizeBox = false;
             this.Name = "MemberRegisterForm";
             this.Text = "MemberRegisterForm";
+            this.Load += new System.EventHandler(this.MemberRegisterForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

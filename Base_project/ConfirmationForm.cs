@@ -13,11 +13,15 @@ namespace Base_project
     public partial class ConfirmationForm : Form
     {
         string c_num;
+        private MemberRegisterForm memberRegisterForm;
+
         public ConfirmationForm(string c_num)
         {
             InitializeComponent();
             this.c_num = c_num;
         }
+
+        public event AuthorizedEventHandler AuthorizedEvent = null;
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
@@ -30,6 +34,11 @@ namespace Base_project
 
             if (tbox_cfnum.Text == c_num)
             {
+                MessageBox.Show("인증 완료");
+                if(AuthorizedEvent != null)
+                {
+                    AuthorizedEvent(this, new AuthorizedEventArgs(true));
+                }
                 this.Close();
             }
             else

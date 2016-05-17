@@ -114,6 +114,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "기초프로젝트 커뮤니티";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
