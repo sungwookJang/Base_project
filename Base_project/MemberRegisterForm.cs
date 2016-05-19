@@ -67,9 +67,12 @@ namespace Base_project
             string c_num = ConfirmNum.AuthNum;
             // 인증번호 생성          
 
+            string urladd = "http://www."+cbox_domain.Text;
+            System.Diagnostics.Process.Start(urladd);
             cff = new ConfirmationForm(c_num);
             cff.ShowDialog();
             cff.AuthorizedEvent += Cff_AuthorizedEvent;
+
         }
 
         private void Cff_AuthorizedEvent(object sender, AuthorizedEventArgs e)

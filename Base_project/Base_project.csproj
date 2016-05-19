@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthorizedEventArgs.cs" />
+    <Compile Include="Community.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Community.Designer.cs">
+      <DependentUpon>Community.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfirmationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Community.resx">
+      <DependentUpon>Community.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConfirmationForm.resx">
       <DependentUpon>ConfirmationForm.cs</DependentUpon>
     </EmbeddedResource>

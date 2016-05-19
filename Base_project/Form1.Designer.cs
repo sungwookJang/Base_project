@@ -87,6 +87,7 @@
             this.btn_login.TabIndex = 5;
             this.btn_login.Text = "로그인";
             this.btn_login.UseVisualStyleBackColor = true;
+            
             // 
             // btn_reg
             // 
@@ -103,7 +104,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(358, 266);
+            this.ClientSize = new System.Drawing.Size(367, 253);
             this.Controls.Add(this.btn_reg);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.tbox_pw);
@@ -114,7 +115,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "기초프로젝트 커뮤니티";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
